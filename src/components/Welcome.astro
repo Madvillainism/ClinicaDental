@@ -1,0 +1,805 @@
+---
+import astroLogo from '../assets/astro.svg';
+//import background from '../assets/background.svg';
+---
+
+<div id="container">
+	<header>
+		<a href="/casos-clinicos">
+			<img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
+		>
+		<nav>
+			<a href="/casos-clinicos">Inicio</a>
+			<a href="/sobre-mi">Sobre Mi</a>
+			<a href="/servicios">Servicios</a>			
+		</nav>
+		<button class="boton-cita">
+			<a>Contáctanos</a>
+		</button>
+	</header>
+	<main>
+		<section id="hero">
+			<article id="hero-text">
+			<h1>
+				Tu sonrisa nunca ha <br> lucido <b>más hermosa.</b>
+			</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			 Harum nesciunt rerum eos exercitationem numquam.</p>
+				<div id= "hero-links">
+					<button class="boton-hero">Agendar una cita
+					</button>
+					<button class="boton-hero">Conoce más</button>	
+				</div>
+			</article>
+			
+			
+			<section id="lower-buttons">
+				<article class="hero-cta">
+					<div class="icon-box">
+						<img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
+						<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+					</div>
+
+					<div class="text-box">
+						<h3>Agenda una cita</h3>						
+						<p>Vorem ipsum dolor sit amet, elit.</p>
+					</div>
+				</article>
+
+				<article class="hero-cta">
+					<div class="icon-box">
+						<img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
+						<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+					</div>
+
+					<div class="text-box">
+						<h3>Conoce nuestros servicios</h3>						
+						<p>Vorem ipsum dolor sit amet, elit.</p>
+					</div>
+				</article>
+			</section>
+		</section>
+
+		<section id="info">
+			<div id="info-text">
+				<h1>¿Por qué elegirnos?</h1>
+				<p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
+velit interdum, ac aliquet odio mattis.</p>
+				<button>Saber más</button>
+			</div>
+
+			<article id="cards-container">
+				<div class="card">
+					<h2>Profesionalismo</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="card">
+					<h2>Profesionalismo</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+				<div class="card">
+					<h2>Profesionalismo</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
+			</article>
+
+			<article id="stats-container">
+				<div id="stats">
+					<section id="stats-items-container">
+						<div class="stat-item">
+							<p>300+</p>
+							<p>Pacientes satisfechos</p>
+						</div>
+						<div class="stat-item">
+							<p>150+</p>
+							<p>Procedimientos realizados</p>
+						</div>
+						<div class="stat-item">
+							<p>10+</p>
+							<p>Años de experiencia</p>
+						</div>
+					</section>
+
+					<img src={astroLogo.src} width="200" height="100" alt="Astro Homepage" />
+				</div>
+
+				<div id="stats-text">
+					<h1>Vergadent</h1>
+					<p>Norem ipsum dolor sit amet, consectetur adipiscing
+elit. Nunc vulputate libero et velit interdum, ac aliquet
+odio mattis.
+</p>
+<p>Norem ipsum dolor sit amet, consectetur adipiscing
+elit. Nunc vulputate?</p>
+					<button> Conoce más</button>
+				</div>
+			</article>
+
+			<section id="contact-map">
+				<div>									
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12631.720583863775!2d-4.9280177499999995!3d37.674349150000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d304ff47e5eb5%3A0x2541347cae15d3b5!2sMercadona!5e0!3m2!1sen!2ses!4v1768596711754!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+
+				<article id="faqs-container">
+					<div id="faqs">
+						<h2> Aun tienes preguntas?</h2>
+						<p>¡Estamos disponibles para responder
+cualquier duda que tengas!
+Respondemos dentro de las 24 horas.</p>
+						<div>
+						<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+						<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+						<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+
+						</div>
+							<article id="hour-info">
+								<div>
+									<h4>Horario</h4>
+									<p>Lunes - Viernes: 9:00 AM - 6:00 PM
+								</div>
+								<div>
+									<h4>Direccion</h4>
+									<p>2118 Thornridge Cir.
+Syracuse, Connecticut</p>
+								</div>
+							</article>
+						</div>
+										
+						<div id="contact-form">
+							<form>
+								<input type="text" placeholder="Nombre Completo" />
+								<input type="email" placeholder="Correo Electrónico" />
+								<textarea placeholder="Tu Mensaje"></textarea>
+								<button type="submit">Enviar Mensaje</button>
+							</form>
+					</div>
+				</article>
+			</section>
+
+			<section id="cta">
+				<h2>¿Listo para transformar tu sonrisa?</h2>
+				<button>Agendar una cita</button>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<section id="footer-info-left">
+			<img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+			interdum, ac aliquet odio mattis.</p>
+			<div>
+										<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+										<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+										<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" width="24" height="24"/>
+									</div>
+									<div>
+										<p>© 2024 Vergadent. Todos los derechos reservados.</p>
+										
+			</div>
+		</section>
+
+		<article id="footer-info-right-container">
+			<section id="footer-info-right">
+				<div class="footer-info">
+					<h4>Empresa</h4>
+					<a href="#">Sobre Nosotros</a>
+					<a href="#">Carreras</a>
+					<a href="#">Blog</a>
+				</div>
+	
+				<div class="footer-info">
+					<h4>Soporte</h4>
+					<a href="#">Centro de Ayuda</a>
+					<a href="#">Contacto</a>
+					<a href="#">Política de Privacidad</a>
+				</div>
+	
+				<div 	class="footer-info">
+					<h4>Servicios</h4>
+					<a href="#">Ortodoncia</a>
+					<a href="#">Blanqueamiento Dental</a>
+					<a href="#">Implantes Dentales</a>
+				</div>
+	
+			</section>
+			<div class="user-policy">
+				<p>User Terms & Conditions | Privacy Policy</p>
+			</div>
+		</article>
+
+	</footer>
+</div>
+
+<style>
+	#background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: blur(100px);
+	}
+
+	#container {
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+		header{
+				width: 90%;
+				height: 4em;
+				display: flex;
+				align-items: center;
+				padding: 20px;
+				gap: 20px;
+			}
+			nav{
+				display: flex;
+				gap: 2em;
+				flex-grow: 1;
+				justify-content: center;
+				align-items: center;
+	
+				a {			
+				font-size: 18px;
+				text-decoration: none;
+				color: black;
+				padding: 0.25em;
+			}
+
+			a:nth-child(1){
+				border-bottom: 2px solid black;
+				padding: 0.15em;
+			}
+		}
+			.boton-cita {
+				background-color: #2f3339;
+				border: none;
+				padding: 15px 20px;
+				border-radius: 25px;
+				cursor: pointer;
+			}
+			.boton-cita a {
+				color: white;
+				font-size: 18px;
+				text-decoration: none;
+				
+			}
+
+	main {
+		height: 100%;
+		width: 100%;
+	}
+	
+		h1 {
+			font-size: 42px;
+			color: white;
+			margin-top: 0.25em;
+			font-weight:400;
+			margin-bottom: 0;
+		}
+		p{
+			color: white;
+			font-size: 18px;
+			margin-top: 0.5em;
+			max-width: 600px;
+			text-align: center;
+		}
+
+		#lower-buttons {
+			margin-top: 50px;
+			display: flex;
+			gap: 30em;
+			    width: 100%;
+    justify-content: space-between;
+
+			.icon-box {
+				display: flex;
+				flex-direction: row;
+				width: 90%;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.text-box {
+				text-align: left;
+				padding: 0 1em;
+				width: 80%;
+				p{
+					text-align: left;
+				}
+			}
+
+			.hero-cta {
+				display: flex;
+				border-radius: 15px;
+				background-color: #b0b6c1;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				height: 15em;
+				gap: 1em;
+			}
+		}
+
+	#hero {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: start;
+		background-color: #7c828c;
+		height:	auto;
+		width: 100%;
+	}
+	
+	#hero-text {
+		margin-top: 2em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		p{
+			font-size: 16px;
+			width: 400px;
+		}
+	}
+
+	#hero-links {
+		display: flex;
+		gap: 15px;	
+
+		.boton-hero {
+			background-color: #ced8ea;
+			border: none;
+			padding: 15px 20px;
+			border-radius: 25px;
+			width: 150px;
+			cursor: pointer;
+		}
+	}
+
+	#links {
+		display: flex;
+		gap: 16px;
+	}
+
+	#links a {
+		display: flex;
+		align-items: center;
+		padding: 10px 12px;
+		color: #111827;
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	#links a:hover {
+		color: rgb(78, 80, 86);
+	}
+
+	#links a svg {
+		height: 1em;
+		margin-left: 8px;
+	}
+
+	#links a.button {
+		color: white;
+		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+		box-shadow:
+			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+		border-radius: 10px;
+	}
+
+	#links a.button:hover {
+		color: rgb(230, 230, 230);
+		box-shadow: none;
+	}
+
+	#info {
+		background-color: #f5f5f5;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+		padding-top: 50px;
+
+		h2{
+			text-align: left;
+		}
+		
+		p{
+			color: black;
+		}
+	}
+
+	#info-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 80%;
+
+		h1{
+			color: black;
+		}
+
+		p{
+			text-align:left;
+		}
+
+		button {
+			background-color: #2f3339;
+			border: none;
+			padding: 5px 10px;
+			border-radius: 10px;
+			cursor: pointer;
+			color: white;
+			width: 120px;
+			font-size: 18px;
+			justify-self: end;
+		}
+	}
+
+	#cards-container {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			justify-content: end;
+			background-image: linear-gradient(to bottom, #ffffff, #5b5757);
+			padding: 40px 20px;
+			border-radius: 10px;
+			width: 300px;
+			height: 350px;
+			text-align: left;
+			color:white;
+
+
+			p{
+				color:white;
+				margin: 0;
+				text-align: left;
+			}
+		}
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+
+	#stats-container{
+		display: flex;
+		flex-direction: row;
+		gap: 80px;
+	}
+
+	#stats {
+		display: flex;
+		flex-direction: row;		
+		align-items: center;
+		gap: 30px;
+	}
+
+	
+	.stat-item {
+		text-align: center;
+		border-radius: 15px;
+		padding: 20px;
+		
+		p:first-child {
+			font-size: 36px;
+			font-weight: bold;
+			margin: 0;
+		}
+	}
+	#stats-items-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	
+	.stat-item:nth-child(1) {
+		background-color: #c6c3ca;
+	}
+
+	.stat-item:nth-child(2) {
+		background-color: #a7abad;
+	}
+
+	.stat-item:nth-child(3) {
+		background-color: #777a7a;		
+	}
+
+	#stats-text {
+		display: flex;
+		flex-direction: column;;
+		gap: 20px;
+		width: 500px;
+		
+		h1{
+			color: black;
+			text-align: left;
+		}
+
+		p{
+			text-align: left;
+		}
+
+		button {
+			background-color: #697280;
+			border: none;
+			padding: 5px 10px;
+			border-radius: 10px;
+			cursor: pointer;
+			color: white;
+			width: 150px;
+			font-size: 18px;
+			justify-self: end;
+		}
+	}
+
+	#contact-map {
+		display: flex;
+		flex-direction: row;		
+		margin-bottom: 50px;
+	}
+
+	#faqs-container {
+		display: flex;
+		flex-direction: row;
+		gap: 50px;
+		background-color: #969696;
+		padding: 50px;
+		align-items: center;
+	}
+
+	#faqs {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		text-align: left;
+		color: white;
+
+		h2{
+			margin: 0;
+		}
+
+		p{
+			color: white;
+			text-align: left;	
+			margin-bottom: 0;
+		}
+	}
+
+	#hour-info {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		color: white;
+
+		h4 {
+			margin-top: 0;
+			margin-bottom: 5px;
+
+		}
+
+		p {
+			margin: 0;
+			font-size: 14px;
+
+		}
+	}
+
+	#contact-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;	
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+		}
+
+		input, textarea {
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
+		button {
+			background-color: #2f3339;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			color: white;
+			font-size: 18px;
+		}
+	}
+
+	#cta {
+		background-color: #7c828c;
+		width: 100%;
+		padding: 40px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 100px;
+
+		h2{
+			color: white;
+			margin: 0;
+		}
+
+		button {
+			background-color: #2f3339;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 25px;
+			cursor: pointer;
+			color: white;
+			font-size: 18px;
+		}
+	}
+
+	
+	footer{
+		background-color: #2f3339;
+		color: white;
+		display: flex;
+		flex-wrap: wrap;	
+		gap: 40px;
+		justify-content: space-around;
+		width: 100%;
+		height: 300px;
+		align-items: center;
+	}
+
+	#footer-info-left {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		height: 100%;
+		justify-content: center;
+
+		p{
+			color: white;
+			margin: 0;
+			text-align: left;
+			width: 420px;
+		}
+	}
+
+	#footer-info-right-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 100%;
+		gap: 10px;
+	}
+
+	#footer-info-right {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+
+		.footer-info {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			h4 {
+				margin: 0;
+			}
+
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 14px;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.user-policy {
+		p{
+			margin: 0;		
+		}
+	}
+
+
+	pre {
+		font-family:
+			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
+			monospace;
+		font-weight: normal;
+		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		margin: 0;
+	}
+
+	code {
+		display: inline-block;
+		background:
+			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
+			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+		border-radius: 8px;
+		border: 1px solid transparent;
+		padding: 6px 8px;
+	}
+
+	.box {
+		padding: 16px;
+		background: rgba(255, 255, 255, 1);
+		border-radius: 16px;
+		border: 1px solid white;
+	}
+
+
+	#news {
+		position: absolute;
+		bottom: 16px;
+		right: 16px;
+		max-width: 300px;
+		text-decoration: none;
+		transition: background 0.2s;
+		backdrop-filter: blur(50px);
+	}
+
+	#news:hover {
+		background: rgba(255, 255, 255, 0.55);
+	}
+
+	@media screen and (max-height: 368px) {
+		#news {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		#container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#hero {
+			display: block;
+			padding-top: 10%;
+		}
+
+		#links {
+			flex-wrap: wrap;
+		}
+
+		#links a.button {
+			padding: 14px 18px;
+		}
+
+		#news {
+			right: 16px;
+			left: 16px;
+			bottom: 2.5rem;
+			max-width: 100%;
+		}
+
+		h1 {
+			line-height: 1.5;
+		}
+	}
+</style>
