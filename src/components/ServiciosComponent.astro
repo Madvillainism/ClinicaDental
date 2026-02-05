@@ -1,6 +1,8 @@
 ---
 import astroLogo from "../assets/astro.svg";
 import fotoprueba from "../assets/fotoprueba.png";
+import { Icon } from "astro-icon/components";
+import "../styles/styles.css";
 ---
 
 <div id="container">
@@ -16,7 +18,7 @@ import fotoprueba from "../assets/fotoprueba.png";
     <nav>
       <a href="/">Inicio</a>
       <a href="/sobre-mi">Sobre Mi</a>
-      <a href="/acceso-interno">Servicios</a>
+      <a href="/servicios">Servicios</a>
     </nav>
     <button class="boton-cita">
       <a>Contáctanos</a>
@@ -31,10 +33,13 @@ import fotoprueba from "../assets/fotoprueba.png";
         </h1>
 
         <p>
-          Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
+          En Carlodent, combinamos años de experiencia con las técnicas más
+          avanzadas para devolverte la confianza de sonreír. Tu salud bucal es
+          nuestra máxima prioridad.
         </p>
-        <button class="boton-hero">Agendar cita </button>
+        <button class="boton-hero"
+          ><Icon name="mdi:calendar-clock" />Agendar cita
+        </button>
       </article>
     </section>
 
@@ -53,13 +58,13 @@ import fotoprueba from "../assets/fotoprueba.png";
             alt="Astro Homepage"
           />
           <div class="card-text">
-            <h2>Ortodoncia</h2>
+            <h2>Limpieza profunda</h2>
             <p>
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br
-              />
-              vulputate libero et velit interdum, ac aliquet odio mattis
+              Protege tu salud bucal eliminando el sarro y la placa bacteriana
+              de forma indolora, previniendo enfermedades y manteniendo un
+              aliento fresco.
             </p>
-            <button class="boton-card">+ Leer más</button>
+            <button class="boton-card"><Icon name="mdi:add" /> Leer más</button>
           </div>
         </div>
 
@@ -71,13 +76,13 @@ import fotoprueba from "../assets/fotoprueba.png";
             alt="Astro Homepage"
           />
           <div class="card-text">
-            <h2>Ortodoncia</h2>
+            <h2>Implantología</h2>
             <p>
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br
-              />
-              vulputate libero et velit interdum, ac aliquet odio mattis
+              Recupera la funcionalidad y estética de tu boca con raíces
+              artificiales de alta durabilidad que se sienten y lucen como
+              dientes naturales
             </p>
-            <button class="boton-card">+ Leer más</button>
+            <button class="boton-card"><Icon name="mdi:add" /> Leer más</button>
           </div>
         </div>
 
@@ -89,13 +94,13 @@ import fotoprueba from "../assets/fotoprueba.png";
             alt="Astro Homepage"
           />
           <div class="card-text">
-            <h2>Ortodoncia</h2>
+            <h2>Estética Dental</h2>
             <p>
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br
-              />
-              vulputate libero et velit interdum, ac aliquet odio mattis
+              Transformamos el color, forma y posición de tus piezas dentales
+              mediante carillas y blanqueamiento para que luzcas una sonrisa
+              radiante
             </p>
-            <button class="boton-card">+ Leer más</button>
+            <button class="boton-card"><Icon name="mdi:add" /> Leer más</button>
           </div>
         </div>
 
@@ -107,13 +112,12 @@ import fotoprueba from "../assets/fotoprueba.png";
             alt="Astro Homepage"
           />
           <div class="card-text">
-            <h2>Ortodoncia</h2>
+            <h2>Odontopediatria</h2>
             <p>
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br
-              />
-              vulputate libero et velit interdum, ac aliquet odio mattis
+              Cuidamos la salud dental de los más pequeños en un ambiente lúdico
+              y seguro, fomentando hábitos saludables desde su primera visita
             </p>
-            <button class="boton-card">+ Leer más</button>
+            <button class="boton-card"><Icon name="mdi:add" /> Leer más</button>
           </div>
         </div>
 
@@ -125,13 +129,13 @@ import fotoprueba from "../assets/fotoprueba.png";
             alt="Astro Homepage"
           />
           <div class="card-text">
-            <h2>Ortodoncia</h2>
+            <h2>Periodoncia</h2>
             <p>
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br
-              />
-              vulputate libero et velit interdum, ac aliquet odio mattis
+              Tratamos las enfermedades de las encías para evitar la pérdida de
+              piezas dentales, asegurando una base firme para una sonrisa
+              hermosa como el dev.
             </p>
-            <button class="boton-card">+ Leer más</button>
+            <button class="boton-card"><Icon name="mdi:add" /> Leer más</button>
           </div>
         </div>
 
@@ -143,13 +147,13 @@ import fotoprueba from "../assets/fotoprueba.png";
             alt="Astro Homepage"
           />
           <div class="card-text">
-            <h2>Ortodoncia</h2>
+            <h2>Ortodoncia Invisible</h2>
             <p>
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br
-              />
-              vulputate libero et velit interdum, ac aliquet odio mattis
+              Alinea tus dientes de manera discreta y cómoda con alineadores
+              transparentes, sin las molestias ni la estética de los brackets
+              tradicionales
             </p>
-            <button class="boton-card">+ Leer más</button>
+            <button class="boton-card"><Icon name="mdi:add" /> Leer más</button>
           </div>
         </div>
       </article>
@@ -160,28 +164,13 @@ import fotoprueba from "../assets/fotoprueba.png";
       <article id="footer-info-left">
         <img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" />
         <p>
-          Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis.
+          En Carlodent nos dedicamos a transformar vidas a través de sonrisas
+          sanas y hermosas, brindando atención odontológica de primer nivel.
         </p>
-        <div>
-          <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg"
-            alt="Facebook"
-            width="24"
-            height="24"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg"
-            alt="Facebook"
-            width="24"
-            height="24"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg"
-            alt="Facebook"
-            width="24"
-            height="24"
-          />
+        <div id="social-links">
+          <Icon name="mdi:instagram" />
+          <Icon name="mdi:facebook" />
+          <Icon name="mdi:linkedin" />
         </div>
       </article>
 
@@ -210,7 +199,7 @@ import fotoprueba from "../assets/fotoprueba.png";
     </section>
 
     <div class="user-policy">
-      <p>© 2024 Vergadent. Todos los derechos reservados.</p>
+      <p>Copyright © 2025 Dental Clinic. All rights reserved.</p>
 
       <p>User Terms & Conditions | Privacy Policy</p>
     </div>
@@ -219,13 +208,15 @@ import fotoprueba from "../assets/fotoprueba.png";
 
 <style>
   #container {
-    font-family:
-      Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
-      sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  [data-icon] {
+    vertical-align: middle;
+    font-size: 2em;
   }
 
   header {
@@ -250,13 +241,13 @@ import fotoprueba from "../assets/fotoprueba.png";
       padding: 0.25em;
     }
 
-    a:nth-child(1) {
+    a:nth-child(3) {
       border-bottom: 2px solid black;
       padding: 0.15em;
     }
   }
   .boton-cita {
-    background-color: #2f3339;
+    background-color: var(--dark-blue);
     border: none;
     padding: 15px 20px;
     border-radius: 25px;
@@ -332,7 +323,7 @@ import fotoprueba from "../assets/fotoprueba.png";
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-    background-image: linear-gradient(to top, #a1a7b3, #d0d5e0);
+    background-image: linear-gradient(to top, var(--cian), #fafafa);
     height: 450px;
     width: 100%;
   }
@@ -358,12 +349,17 @@ import fotoprueba from "../assets/fotoprueba.png";
     }
 
     .boton-hero {
-      background-color: #fefeff;
+      background-color: var(--mid-blue);
       border: none;
-      padding: 15px 20px;
+      padding: 5px 10px;
       border-radius: 10px;
-      width: 175px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      width: 220px;
       cursor: pointer;
+      color: #fafafa;
       font-size: 16px;
     }
   }
@@ -496,7 +492,7 @@ import fotoprueba from "../assets/fotoprueba.png";
 
       p {
         text-align: left;
-        font-size: 16px;
+        font-size: 14px;
         width: 90%;
       }
     }
@@ -506,12 +502,12 @@ import fotoprueba from "../assets/fotoprueba.png";
     }
 
     .boton-card {
-      background-color: #f4f4f4;
+      background-color: var(--dark-blue);
       border: none;
-      padding: 5px 5px;
+      padding: 5px 15px;
       border-radius: 10px;
       cursor: pointer;
-      color: black;
+      color: white;
       width: 150px;
       font-size: 18px;
       justify-self: end;
@@ -519,7 +515,7 @@ import fotoprueba from "../assets/fotoprueba.png";
   }
 
   footer {
-    background-color: #3c3a3a;
+    background-color: var(--dark-blue);
     color: white;
     display: flex;
     flex-direction: column;
@@ -559,6 +555,10 @@ import fotoprueba from "../assets/fotoprueba.png";
     justify-content: flex-end;
     gap: 80px;
     width: 70%;
+
+    [data-icon] {
+      font-size: 1em;
+    }
 
     .footer-text-container {
       display: flex;

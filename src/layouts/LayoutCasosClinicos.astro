@@ -1,23 +1,37 @@
+---
+import "@fontsource/poppins";
+---
+
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Sobre Mi</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Sobre Mi</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-        background-image:linear-gradient(to bottom, #74ebd5, #ACB6E5);
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-family: "Helvetica", sans-serif;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      font-family: "Poppins", sans-serif;
+    }
+  }
 </style>
