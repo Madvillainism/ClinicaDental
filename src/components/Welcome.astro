@@ -1,6 +1,7 @@
 ---
 import astroLogo from "../assets/astro.svg";
 import carlodent from "../assets/logo-carlodent.svg";
+import carlodentWhite from "../assets/logo-carlodent.png";
 import { Icon } from "astro-icon/components";
 import "../styles/styles.css";
 ---
@@ -8,12 +9,7 @@ import "../styles/styles.css";
 <div id="container">
   <header>
     <a href="/casos-clinicos">
-      <img
-        src={carlodent.src}
-        width="115"
-        height="50"
-        alt="Carlodent Homepage"
-      /></a
+      <img src={carlodent.src} alt="Carlodent Homepage" /></a
     >
     <nav>
       <a href="/casos-clinicos">Inicio</a>
@@ -47,10 +43,10 @@ import "../styles/styles.css";
         <article class="hero-cta">
           <div class="icon-box">
             <img
-              src={astroLogo.src}
+              src={carlodent.src}
               width="115"
               height="48"
-              alt="Astro Homepage"
+              alt="Carlodent Homepage"
             />
             <Icon name="mdi:arrow-right" />
           </div>
@@ -64,7 +60,7 @@ import "../styles/styles.css";
         <article class="hero-cta">
           <div class="icon-box">
             <img
-              src={astroLogo.src}
+              src={carlodent.src}
               width="115"
               height="48"
               alt="Astro Homepage"
@@ -123,10 +119,10 @@ import "../styles/styles.css";
           </section>
 
           <img
-            src={astroLogo.src}
+            src={carlodent.src}
             width="200"
             height="100"
-            alt="Astro Homepage"
+            alt="Carlodent Homepage"
           />
         </div>
 
@@ -200,10 +196,10 @@ import "../styles/styles.css";
       <section id="footer-info">
         <article id="footer-info-left">
           <img
-            src={astroLogo.src}
-            width="115"
-            height="48"
-            alt="Astro Homepage"
+            src={carlodentWhite.src}
+            width="200"
+            height="80"
+            alt="Carlodent Homepage"
           />
           <p>
             En Carlodent nos dedicamos a transformar vidas a través de sonrisas
@@ -314,6 +310,7 @@ import "../styles/styles.css";
       padding: 15px 20px;
       border-radius: 25px;
       cursor: pointer;
+      color: white;
     }
     .boton-cita a {
       color: white;
