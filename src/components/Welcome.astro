@@ -145,13 +145,21 @@ import "../styles/styles.css";
       <section id="contact-map">
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12631.720583863775!2d-4.9280177499999995!3d37.674349150000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d304ff47e5eb5%3A0x2541347cae15d3b5!2sMercadona!5e0!3m2!1sen!2ses!4v1768596711754!5m2!1sen!2ses"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d390.42623655533765!2d-4.933400567519894!3d37.671087628332614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d3053067dd253%3A0xeb26e6356eae3051!2sCarlodent!5e1!3m2!1sen!2ses!4v1775642018535!5m2!1sen!2ses"
             width="600"
             height="450"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!--  <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12631.720583863775!2d-4.9280177499999995!3d37.674349150000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d304ff47e5eb5%3A0x2541347cae15d3b5!2sMercadona!5e0!3m2!1sen!2ses!4v1768596711754!5m2!1sen!2ses"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
 
         <article id="faqs-container">
@@ -172,7 +180,7 @@ import "../styles/styles.css";
                 <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
                 <div>
                   <h4>Direccion</h4>
-                  <p>2118 Thornridge Cir. Syracuse, Connecticut</p>
+                  <p>C. José María Peman, 4, 14100 La Carlota, Córdoba</p>
                 </div>
               </div>
             </article>
@@ -526,7 +534,6 @@ import "../styles/styles.css";
         display: flex;
         flex-direction: column;
         justify-content: end;
-        background-image: linear-gradient(to bottom, #ffffff, #5b5757);
         padding: 40px 20px;
         border-radius: 10px;
         width: 300px;
@@ -539,6 +546,24 @@ import "../styles/styles.css";
           margin: 0;
           text-align: left;
         }
+      }
+
+      .card:nth-child(1) {
+        background-image: url("../assets/sonrisa.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .card:nth-child(2) {
+        background-image: url("../assets/implante-dental.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .card:nth-child(3) {
+        background-image: url("../assets/ortodoncia-invisible.png");
+        background-size: cover;
+        background-position: center;
       }
 
       h3 {
