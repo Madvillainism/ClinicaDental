@@ -1,7 +1,12 @@
 ---
-import astroLogo from "../assets/astro.svg";
-import fotoprueba from "../assets/fdentista.svg";
 import carlodent from "../assets/logo-carlodent.svg";
+import ortodoncia from "../assets/ortodoncia-invisible.png";
+import dental1 from "../assets/dental-1.jpg";
+import dental2 from "../assets/dental-2.jpg";
+import dental3 from "../assets/dental-3.jpg";
+import dental4 from "../assets/dental-4.jpg";
+import dental5 from "../assets/dental-5.jpg";
+
 import carlodentWhite from "../assets/logo-carlodent.png";
 import { Icon } from "astro-icon/components";
 import "../styles/styles.css";
@@ -46,12 +51,7 @@ import "../styles/styles.css";
 
       <article id="cards-container">
         <div class="card">
-          <img
-            src={carlodent.src}
-            width="200"
-            height="100"
-            alt="Astro Homepage"
-          />
+          <img src={dental1.src} alt="Astro Homepage" />
           <div class="card-text">
             <h2>Limpieza profunda</h2>
             <p>
@@ -65,7 +65,7 @@ import "../styles/styles.css";
 
         <div class="card">
           <img
-            src={carlodent.src}
+            src={dental2.src}
             width="200"
             height="100"
             alt="Astro Homepage"
@@ -83,7 +83,7 @@ import "../styles/styles.css";
 
         <div class="card">
           <img
-            src={carlodent.src}
+            src={dental3.src}
             width="200"
             height="100"
             alt="Astro Homepage"
@@ -100,12 +100,7 @@ import "../styles/styles.css";
         </div>
 
         <div class="card">
-          <img
-            src={carlodent.src}
-            width="200"
-            height="100"
-            alt="Astro Homepage"
-          />
+          <img src={dental4.src} alt="Astro Homepage" />
           <div class="card-text">
             <h2>Odontopediatria</h2>
             <p>
@@ -117,12 +112,7 @@ import "../styles/styles.css";
         </div>
 
         <div class="card">
-          <img
-            src={carlodent.src}
-            width="200"
-            height="100"
-            alt="Astro Homepage"
-          />
+          <img src={dental5.src} alt="Astro Homepage" />
           <div class="card-text">
             <h2>Periodoncia</h2>
             <p>
@@ -135,12 +125,7 @@ import "../styles/styles.css";
         </div>
 
         <div class="card">
-          <img
-            src={carlodent.src}
-            width="200"
-            height="100"
-            alt="Astro Homepage"
-          />
+          <img src={ortodoncia.src} alt="Ortodoncia Invisible" />
           <div class="card-text">
             <h2>Ortodoncia Invisible</h2>
             <p>
@@ -208,6 +193,9 @@ import "../styles/styles.css";
 
 <style>
   #container {
+    font-family:
+      Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
+      sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,13 +237,13 @@ import "../styles/styles.css";
   .boton-cita {
     background-color: var(--dark-blue);
     border: none;
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 25px;
     cursor: pointer;
   }
   .boton-cita a {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
   }
 
@@ -471,13 +459,29 @@ import "../styles/styles.css";
       background: #bdbdbd;
       border-radius: 15px;
       max-width: 300px;
-      height: 400px;
-      max-height: 500px;
+      height: 550px;
+      max-height: 700px;
       transition: transform 0.3s ease;
       gap: 25px;
       img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
         align-self: center;
       }
+    }
+
+    .card:nth-child(1) {
+      background: #f8fafc;
+    }
+
+    .card:nth-child(3) {
+      background: #f8fafc;
+    }
+
+    .card:nth-child(5) {
+      background: #f8fafc;
     }
 
     .card-text {

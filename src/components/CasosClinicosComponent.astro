@@ -2,6 +2,9 @@
 import astroLogo from "../assets/astro.svg";
 import fotoprueba from "../assets/fdentista.svg";
 import carlodent from "../assets/logo-carlodent.svg";
+import educacion from "../assets/dental-4.jpg";
+import mision1 from "../assets/dental-2.jpg";
+import avatar from "../assets/avatar1.jpg";
 import carlodentWhite from "../assets/logo-carlodent.png";
 import { Icon } from "astro-icon/components";
 import "../styles/styles.css";
@@ -68,9 +71,9 @@ import "../styles/styles.css";
       <article id="experiencia-container">
         <div id="educacion-container">
           <img
-            src={carlodent.src}
-            width="200"
-            height="100"
+            src={educacion.src}
+            width="300"
+            height="500"
             alt="Astro Homepage"
           />
           <div class="educacion">
@@ -81,17 +84,17 @@ import "../styles/styles.css";
 
         <div id="mision-container">
           <img
-            src={carlodent.src}
-            width="200"
-            height="100"
+            src={mision1.src}
+            width="300"
+            height="300"
             alt="Astro Homepage"
           />
-          <img
-            src={carlodent.src}
-            width="200"
-            height="100"
+          <!--  <img
+            src={mision2.src}
+            width="300"
+            height="200"
             alt="Astro Homepage"
-          />
+          /> -->
           <div class="mision">
             <h5>Misión</h5>
             <p>Brindar salud bucal integral con calidez humana</p>
@@ -116,7 +119,7 @@ import "../styles/styles.css";
             bien."
           </p>
           <div>
-            <img />
+            <img src={avatar.src} alt="Juan Pérez" />
             <h3>Juan Pérez</h3>
             <p>Paciente desde 2005</p>
           </div>
@@ -129,7 +132,7 @@ import "../styles/styles.css";
             bien."
           </p>
           <div>
-            <img />
+            <img src={avatar.src} alt="Juan Pérez" />
             <h3>Juan Pérez</h3>
             <p>Paciente desde 2005</p>
           </div>
@@ -142,7 +145,7 @@ import "../styles/styles.css";
             bien."
           </p>
           <div>
-            <img />
+            <img src={avatar.src} alt="Juan Pérez" />
             <h3>Juan Pérez</h3>
             <p>Paciente desde 2005</p>
           </div>
@@ -168,7 +171,6 @@ import "../styles/styles.css";
             <div>★★★★★</div>
             <p>"Excelente servicio y atención..."</p>
             <div class="author">
-              <img src="/avatar1.jpg" alt="Juan" />
               <div class="info">
                 <h3>Juan Pérez</h3>
                 <p>Paciente desde 2005</p>
@@ -180,7 +182,6 @@ import "../styles/styles.css";
             <div>★★★★★</div>
             <p>"Excelente servicio y atención..."</p>
             <div class="author">
-              <img src="/avatar1.jpg" alt="Juan" />
               <div class="info">
                 <h3>Juan Pérez</h3>
                 <p>Paciente desde 2005</p>
@@ -192,7 +193,6 @@ import "../styles/styles.css";
             <div>★★★★★</div>
             <p>"Excelente servicio y atención..."</p>
             <div class="author">
-              <img src="/avatar1.jpg" alt="Juan" />
               <div class="info">
                 <h3>Juan Pérez</h3>
                 <p>Paciente desde 2005</p>
@@ -204,7 +204,6 @@ import "../styles/styles.css";
             <div>★★★★★</div>
             <p>"Excelente servicio y atención..."</p>
             <div class="author">
-              <img src="/avatar1.jpg" alt="Juan" />
               <div class="info">
                 <h3>Juan Pérez</h3>
                 <p>Paciente desde 2005</p>
@@ -216,7 +215,6 @@ import "../styles/styles.css";
             <div>★★★★★</div>
             <p>"Excelente servicio y atención..."</p>
             <div class="author">
-              <img src="/avatar1.jpg" alt="Juan" />
               <div class="info">
                 <h3>Juan Pérez</h3>
                 <p>Paciente desde 2005</p>
@@ -333,7 +331,7 @@ import "../styles/styles.css";
   .boton-cita {
     background-color: var(--dark-blue);
     border: none;
-    padding: 15px 20px;
+    padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
   }
@@ -686,7 +684,6 @@ import "../styles/styles.css";
     flex-wrap: wrap;
   }
 
-  /* Your existing card styles from before... */
   .card {
     background: #f8fafc;
     border-radius: 1rem;
